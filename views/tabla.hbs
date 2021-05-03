@@ -1,0 +1,21 @@
+
+
+<h2 style="color:crimson;">Lista de productos</h2>
+{{#if productos.length}}
+    <div class="table-responsive">
+        <table class="table table-dark">
+            <tr style="color: rgb(255, 174, 0);"> <th>Nombre</th> <th>Precio</th> <th>Descripcion</th> <th>URL</th> </tr>
+            {{#each productos}}
+            <tr>
+                <td>{{nombre}}</td>
+                <td>{{precio}}</td>
+                <td>{{descripcion}}</td>
+                <td><img src={{url}} alt={{name}}></td>
+
+            </tr>
+            {{/each}}
+        </table>
+    </div>
+{{else}}
+    <h3 class="alert alert-danger">No se encontraron productos</h1>
+{{/if}}

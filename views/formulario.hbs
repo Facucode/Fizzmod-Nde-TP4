@@ -1,0 +1,33 @@
+<div class="container mt-3">
+    <div class="jumbotron">
+        <h1 style="color:blue;">Ingrese datos</h1>
+        <br>
+
+        <form action="/ingreso" method="post">
+            
+            <div class="form-group">
+                <label for="nombre"><b>Nombre</b></label>
+                <input id="nombre" class="form-control" type="text" name="nombre">
+            </div>
+
+            <div class="form-group">
+                <label for="precio"><b>Precio</b></label>
+                <input id="precio" class="form-control" type="number" name="precio">
+            </div>            
+
+            <div class="form-group">
+                <label for="descripcion"><b>Descripcion</b></label>
+                <input id="descripcion" class="form-control" type="text" name="descripcion">
+            </div>
+
+            <div class="form-group">
+                <label for="descripcion"><b>URL de la foto del producto</b></label>
+                <input id="url" class="form-control" type="text" name="url">
+            </div>
+
+            <button class="btn btn-success mt-3 mb-5">Enviar</button>
+        </form>
+        <a href="/listar">Ver listado de productos</a>
+        <a href="/set-correo">Configurar direccion de email</a>
+    </div>
+</div>
